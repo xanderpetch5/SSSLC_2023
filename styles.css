@@ -1,0 +1,583 @@
+body {
+    /* Default values for elements in my body */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('images/testbg2.png');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    color: #394240;
+    text-align: center;
+}
+
+header {
+    /* Styling my header, adding a background colour and radii at the bottom to make it blend well with the web page */
+    background-color: #210B2C;
+    padding: 5%;
+    text-align: center;
+    color: #ffffff;
+    border-bottom-left-radius: 2vw;
+
+    border-bottom-right-radius: 2vw;
+}
+
+
+h1 {
+    font-size: 3vw;
+}
+
+
+
+.grid-container {
+    /* Default values for my navbar grid*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+    list-style-type: none;
+    padding: 0;
+}
+
+.grid-container li {
+    margin-right: 0;
+}
+
+.grid-container li a {
+    /* Setting up how my navbar elements look, as well as adding a transition for smoother animation */
+    text-decoration: none;
+    color: #394240;
+    display: block;
+    padding: 3.5%;
+    text-align: center;
+    background-color: white;
+    border-radius: 1vw;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.grid-container li a:hover {
+    /* How my navbar will change when an element is hovered over */
+    background-color: #BC96E6;
+    color: white;
+    transform: scale(1.2);
+}
+
+h2 {
+    /* Default values for all my 2nd headers */
+    color: #394240;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+main {
+    /* Default colour and text allignment for all text in main */
+    text-align: center;
+    color: #394240;
+}
+
+img {
+    /* describing how my images scale and adding a transition for my animation */
+    max-width: 50%;
+    transition: transform 0.5s ease;
+    border-radius: 2vw;
+    border: 0.2em solid #394240;
+}
+
+img:hover {
+    /* How my image scales when hovered over */
+    transform: scale(1.2);
+}
+
+
+.grid-container li#active a {
+    /* Changing the look in the navbar of my active page */
+    color: white;
+    background-color: #210b2c;
+}
+
+#commiteeTitle {
+    /* Grid layout for navigation links */
+    color: #4a536b;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.teamMembers li {
+    text-align: left;
+    list-style: disc;
+
+
+}
+
+.teamMembers {
+    list-style: none;
+}
+
+.caption {
+    color: rgba(0, 0, 0, .5);
+}
+
+.paragraphContainer {
+    /* Creates a white opaque curved background around my elements, making them stand out */
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 4vw;
+    width: fit-content;
+    margin: auto;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+h3 {
+    text-align: center;
+    color: #4a536b;
+}
+
+.link a {
+    color: #ae759f;
+    font-style: italic;
+    text-decoration: none;
+
+}
+
+.link a:hover {
+    color: #210B2C;
+}
+
+.link {
+    color: #ae759f;
+    font-style: italic;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    width: fit-content;
+    margin: auto;
+}
+
+.link:hover {
+    /*  */
+    color: #210B2C;
+    transform: scale(1.2);
+}
+
+#purposeLinks {
+    list-style: none;
+}
+
+#purposeEmails {
+    list-style: none;
+}
+
+.contact {
+    color: #377796;
+    width: fit-content;
+    margin: auto;
+    border-radius: .5vw;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact:hover {
+    transform: scale(1.2);
+    background-color: #377796;
+    color: white;
+
+
+}
+
+.quizGridContainer {
+    display: grid;
+    gap: 2vw;
+    list-style-type: none;
+}
+
+#commentsForm {
+    display: grid;
+    gap: 1vw;
+    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.quizAnswer {
+    background-color: white;
+    padding: 7.5%;
+
+
+}
+
+.quizImg img:hover {
+    transform: scale(1);
+}
+
+.correct {
+    transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.correct:hover {
+    background-color: lightgreen;
+    transform: scale(1.05);
+
+}
+
+.correct:hover::after {
+    content: " CORRECT";
+    display: block;
+}
+
+.incorrect {
+    transition: background-color 0.5s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.incorrect:hover {
+    background-color: crimson;
+    transform: scale(1.05);
+    color: white;
+}
+
+.incorrect:hover::after {
+    display: block;
+    content: "INCORRECT";
+}
+
+#meetingList {
+    list-style: none;
+}
+
+#comments {
+    resize: none;
+    font-family: 'Arial', sans-serif;
+}
+
+.inputBoxes {
+    border-radius: .5vw;
+    width: 95%;
+    border: dashed #ccc;
+    transition: all 0.5s ease-in-out;
+    color: #210B2C;
+}
+
+.inputBoxes:focus {
+    transform: scale(1.3);
+}
+
+.inputBoxes:active {
+    transform: scale(1.3);
+}
+
+.inputBoxes:hover {
+    border: solid black;
+}
+
+#submitButton {
+    border-radius: 0.1vw;
+    background-color: #ffffff;
+    box-shadow: none;
+    color: #333;
+    padding: 2vw;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    cursor: pointer;
+    border: #333 solid;
+}
+
+#submitButton:hover {
+    background-color: #210B2C;
+    color: white;
+    border: solid #210B2C;
+}
+
+#submitButton:focus {
+    outline: none;
+}
+
+footer {
+    background-color: rgba(33, 11, 44, 0.9);
+
+    border-top-right-radius: 2.5vw;
+    border-top-left-radius: 2.5vw;
+    padding-bottom: .1vw;
+}
+
+#footerTitle {
+    font-size: 2rem;
+    color: wheat;
+}
+
+#footerContainer {
+    display: grid;
+    gap: 5vw;
+    list-style-type: none;
+}
+
+footer .paragraphContainer {
+    background-color: #210B2C;
+    border-radius: 1vw;
+    padding-bottom: .1vw;
+}
+
+#footerContainer li {
+    margin-right: 6.5vw;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+#footerContainer li a {
+    text-decoration: none;
+    color: wheat;
+    display: block;
+    border-radius: 1vw;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+#footerContainer li a:hover {
+    background-color: #BC96E6;
+    color: white;
+    transform: scale(1.2);
+    border: .2vw double #ccc;
+}
+
+footer .caption {
+    color: rgba(255, 255, 255, .5);
+}
+
+
+.accessibility-statement {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 1vw;
+    border-radius: 1vw;
+    margin: 5vw;
+}
+
+.accessibility-statement h2 {
+    color: #210B2C;
+}
+
+#mfdDecisions {
+    list-style: none;
+    padding-left: 8vw;
+}
+
+#mfdDecisions li ul {
+    list-style: inside;
+}
+
+.sitemaps:hover {
+    transform: scale(2);
+}
+
+.mockups {
+    border-radius: 0;
+    border: dashed;
+}
+
+#menuChoiceList {
+    list-style: none;
+}
+
+li {
+    margin-right: 6.5vw;
+}
+
+#designReasonList {
+    list-style: inside;
+}
+
+#legalLinkList,
+#legalImg {
+    list-style: none;
+    margin-left: 5vw;
+}
+
+#otherSources {
+    list-style: none;
+}
+
+#optimisationList {
+    list-style: none;
+}
+
+#debugList {
+    list-style: none;
+    margin-left: 4vw;
+}
+
+.menuSysPoint {
+    margin-left: 4vw;
+}
+
+
+@media (min-width:0px) {
+
+    /* mobile devices */
+    * {
+        font-size: 1.1rem;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        /* Setting up my navbar as a 4xN grid */
+    }
+
+    .first {
+        grid-column-start: 1;
+        /* making each elemeent on the bar take up 2 space*/
+        grid-column-end: 3;
+    }
+
+    .second {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .third {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .fourth {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .fifth {
+        grid-column-start: 2;
+        /* Centreing the last navbar item */
+        grid-column-end: 4;
+    }
+
+    .quizGridContainer {
+        grid-template-columns: repeat(1, 1fr);
+        /* making the grid for my quiz on mobile 1xN */
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    #commentsForm {
+        grid-template-columns: repeat(1, 1fr);
+        /* making the grid for my comment form on mobile 1xN */
+    }
+
+    #footerContainer {
+        grid-template-columns: repeat(1, 1fr);
+        /* making the grid for my footer on mobile 1xN */
+    }
+}
+
+@media (min-width: 768px) {
+
+    /* narrow devices */
+    * {
+        font-size: 1.1rem;
+    }
+
+    h1 {
+        font-size: 4.5vw;
+    }
+
+    .quizImg {
+
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .quizGridContainer {
+        grid-template-columns: repeat(2, 1fr);
+        /* making the grid for my quiz on narrow devices 2xN */
+    }
+
+    #commentsForm {
+        grid-template-columns: repeat(3, 1fr);
+        /* making the grid for my quiz on narrow devices 3xN */
+    }
+
+    #submitButton {
+        grid-column-start: 2;
+        /* making the submit button allign differently */
+        grid-column-end: 3;
+    }
+
+    #footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+@media (min-width:1280px) {
+
+    /* desktop devices */
+    h1 {
+        font-size: 3vw;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(6, 1fr);
+        /* making the grid for my navbar on desktop devices 6xN */
+    }
+
+    .first {
+        grid-column-start: 1;
+        /* each navbar element takes up 2 spaces */
+        grid-column-end: 3;
+    }
+
+    .second {
+        grid-column-start: 3;
+        grid-column-end: 5;
+
+    }
+
+    .third {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+    .fourth {
+        grid-column-start: 2;
+        /* centering the fourth and fifth elements */
+        grid-column-end: 4;
+    }
+
+    .fifth {
+        grid-column-start: 4;
+        grid-column-end: 6;
+    }
+
+    * {
+        font-size: 1.2rem;
+    }
+
+    .quizImg {
+        grid-column-start: 1;
+        /*enlarging the image on dsektop */
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 5;
+    }
+
+    .quizGridContainer {
+        grid-template-columns: repeat(3, 1fr);
+        /* making the grid for my quiz on desktop devices 3xN */
+    }
+
+    #commentsForm {
+        grid-template-columns: repeat(3, 1fr);
+        /* making the grid for my comment form on desktop devices 6xN */
+    }
+
+    #submitButton {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /* making the submit button allign differently */
+    }
+
+    #footerContainer {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+}

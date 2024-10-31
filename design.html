@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sheffield Staff-Student Liaison Committee</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexander Petch">
+</head>
+<body>
+  <header>
+    <h1>Sheffield Staff-Student Liaison Committee</h1>
+  </header>
+  <nav>
+    <ul class="grid-container">
+      <li class="first">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="second">
+        <a href="purpose.html">Purpose</a>
+      </li>
+      <li class="third">
+        <a href="membership.html">Membership</a>
+      </li>
+      <li class="fourth">
+        <a href="meetings.html">Meetings</a>
+      </li>
+      <li class="fifth">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="paragraphContainer">
+    <h2>Design</h2>
+    <main>
+      <p>This page aims to inform the user about how mobile-first design decisions were chosen to improve the functionality and responsiveness of the webpage.<br>
+      The design I chose for this website, was a purple/white colour scheme. My design is not entirely cooperate, with a vibrant background of purple and pink lines, with mainly rounded corners; attempting to be friendly and vibrant. I also chose make a lot of my elements interactive with animations, making my website feel more alive and modern, as well as adding to the accessibility,</p>
+      <h3>Mobile First Design Decisions</h3>
+      <ul id="mfdDecisions">
+        <li>
+          <h4>Default Styles</h4>
+        </li>
+        <li>This webpage uses default styles that ensure important elements of the webpage remain consistent across all resolutions, providing a similarly effective experience.</li>
+        <li>
+          <h4>Mobile-First Media Query (min-width: 0px)</h4>
+        </li>
+        <li>In this media query, adjustments are made for small screens or mobile devices:
+          <ul>
+            <li>The grid in `.grid-container` is set to have four columns, allowing 2 links on the navbar per row.</li>
+            <li>The layout is adjusted for grid items (`.first`, `.second`, etc.) allowing each element to allign as I wish within the grid.</li>
+            <li>The font size of `h1` is increased for better visibility on smaller screens.</li>
+            <li>The layout of my quiz and footer is modified.</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Tablet and Narrow Screen Media Query (min-width: 768px)</h4>
+        </li>
+        <li>In this media query, adjustments are made for tablets and narrow screens:
+          <ul>
+            <li>Font size for `h1` is reduced compared to the mobile view.</li>
+            <li>The quiz is given specific grid row and column placements.</li>
+            <li>The layout of my comment form, and footer is modified.</li>
+          </ul>
+        </li>
+        <li>
+          <h4>Larger Screen Media Query (min-width: 1280px)</h4>
+        </li>
+        <li>In this media query, additional adjustments are made for larger screens:
+          <ul>
+            <li>The number of columns in `.grid-container` is increased to six, allowing me to correctly centre my navbar elements.</li>
+            <li>Font size for all elements is increased.</li>
+            <li>The layout of my quiz, navbar, comment form, and footer is further modified.</li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+  </div><br>
+  <div class="paragraphContainer">
+    <h3>Site Map</h3>
+    <p>Images that describe the structure of my webpage, as well as key elements and features on each of my pages.</p><br>
+    <img class="sitemaps" src="./images/sitemap1.png" alt="An image describing my sitemap for my home,purpose,meeting,contact and membership">
+    <div class="caption">
+      Sitemap for home, purpose, meeting, contact and membership.
+    </div><br>
+    <img class="sitemaps" src="./images/sitemap2.png" alt="An image describing my sitemap for my footer,legal,design and testing">
+    <div class="caption">
+      Sitemap for footer, legal, design, and tesing.
+    </div><br>
+  </div><br>
+  <div class="paragraphContainer">
+    <h3>Design Mockups</h3>
+    <p>Images that describe the early drafts of how my website should look, for mobile, narrow and large devices. Design mockups are good to createe before implementing a website so you have a clear objective of what you want your website to look like.</p><img class="mockups" src="./images/sitemock1.png" alt="Mockup for desktop">
+    <div class="caption">
+      Mockup for desktop
+    </div><br>
+    <img class="mockups" src="./images/sitemock2.png" alt="Mockup for narrow devices">
+    <div class="caption">
+      Mockup for narrow devices
+    </div><br>
+    <img class="mockups" src="./images/sitemock3.png" alt="Mockup for mobile devices">
+    <div class="caption">
+      Mockup for mobile devices
+    </div><br>
+    <br>
+    <h3>Design Reasoning</h3>
+    <p>This section will illustrate certain tweaks and design decisions that I made during the process from mockup to final product</p>
+    <ul id="designReasonList">
+      <li>Most of my content is centred in the middle of the website, this is to make it more readable and attractive to users, as they will most likely be facing the centre of their screen.</li>
+      <li>My navbar changed the number of elements depending on the screen size, this is to make it easier to navigate the page on smaller screens, stopping them from accidentally reaching the wrong page.</li>
+      <li>The footer of the page is deliberatley a different colour to most elements on the page, making it stand out so users know that this is the footer of the page</li>
+      <li>Interactive elements are a large part of my website, making the website feel more advanced and modern</li>
+      <li>Links and other significant peices of information stand out on the page, this draws the users attention, focussing them on the information that should be seen</li>
+      <li>CSS grids have been used as they allow me a lot of control over how my elements look on different screens</li>
+      <li>I have styled different lists in different ways, for some they are designed to look cleaner and clearly present information. For other I included bullet points so that the user is aware where one point ends and another starts</li>
+      <li>I decided to make my colour scheme purple, because a lot of modern looking websites have purple and dark blue colour schemes and white for a contrast and modern look</li>
+      <li>I used a custom background to have further control over how my website looks and feels</li>
+      <li>I had to change my navbar part way through my implementation, as some of my elements were off centre, and some had to be moved to the footer. I also decided to make my mobile and narrow device implementation of the nabar the same, instead of narrow devices and desktop devices having the same implemenatation. The reason for this was becuase at lower resolutions in the narrow device range, my navbar buttons became too small, changing fixed this issue.</li>
+    </ul>
+  </div><br>
+  <div class="paragraphContainer">
+    <h3>Menu system</h3>
+    <p>This section of the page aims to justify my use of the menu system implemented in my website.</p>
+    <ul id="menuChoiceList">
+      <li>
+        <h4>Header Navigation:</h4>
+      </li>
+      <li>
+        <ul>
+          <li class="menuSysPoint">I designed a horizontal grid-container for navigation, offering an organized and visually balanced layout.</li>
+        </ul>
+      </li>
+      <li>
+        <h4>Active Item Highlighting:</h4>
+      </li>
+      <li>
+        <ul>
+          <li class="menuSysPoint">I applied the "active" class to the current menu item to visually distinguish the current page</li>
+          <li class="menuSysPoint">The use of a distinctive background color for the active item ensures clear navigation feedback</li>
+        </ul>
+      </li>
+      <li>
+        <h4>Grid Layout:</h4>
+      </li>
+      <li>
+        <ul>
+          <li class="menuSysPoint">I implemented a grid layout for both my menu and footer layouts, this allowed me to adjust the position of navigation links, creating a clean and organized look</li>
+        </ul>
+      </li>
+    </ul>
+  </div><br>
+  <br>
+  <footer>
+    <br>
+    <h2 id="footerTitle">Footer</h2><a class="caption" href="design.html">Top of page</a>
+    <p class="caption">&copy; 2023 SSL-COM. All Rights Reserved. Website - Copyright 2023</p>
+    <ul id="footerContainer">
+      <li class="footerLink">
+        <a href="accessibility.html">Accessibility</a>
+      </li>
+      <li class="footerLink">
+        <a href="legal.html">Legal / Security</a>
+      </li>
+      <li class="footerLink">
+        <a href="design.html">Design</a>
+      </li>
+      <li class="footerLink">
+        <a href="testing.html">Testing</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>

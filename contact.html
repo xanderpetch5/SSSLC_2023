@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Sheffield Staff-Student Liaison Committee</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Alexander Petch">
+</head>
+<body>
+  <header>
+    <h1>Sheffield Staff-Student Liaison Committee</h1>
+  </header>
+  <nav>
+    <ul class="grid-container">
+      <li class="first">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="second">
+        <a href="purpose.html">Purpose</a>
+      </li>
+      <li class="third">
+        <a href="membership.html">Membership</a>
+      </li>
+      <li class="fourth">
+        <a href="meetings.html">Meetings</a>
+      </li>
+      <li id="active" class="fifth">
+        <a href="contact.html">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="paragraphContainer">
+    <h2>Contact</h2>
+    <main>
+      <p>This page aims to share contact information for the SSL-COM and allow you to send us any feedback, complaints, or concerns.</p><br>
+      <br>
+      <p>Email all reps - <span class="contact">com-student-reps-group@sheffield.ac.uk</span></p><br>
+      <section id="comments-form">
+        <h3>Comments Form</h3>
+        <p>To submit your comments, enter your email adress, your name, and your conerns.</p><br>
+        <div class="paragraphContainer">
+          <br>
+          <form action="#" method="post" id="commentsForm" name="commentsForm">
+            <label for="email">Email Address:</label> <input type="email" id="email" name="email" required="" class="inputBoxes"><br>
+            <label for="recipient">Comments for:</label> <input type="text" id="recipient" name="recipient" required="" class="inputBoxes"><br>
+            <label for="comments">Comments:</label> 
+            <textarea type="text" id="comments" name="comments" rows="20" required="" class="inputBoxes"></textarea><br>
+            <input type="button" value="Submit" onclick="submitForm()" id="submitButton">
+          </form><br>
+        </div>
+      </section><br>
+    </main>
+  </div><br>
+  <br>
+  <br>
+  <footer>
+    <br>
+    <h2 id="footerTitle">Footer</h2><a class="caption" href="contact.html">Top of page</a>
+    <p class="caption">&copy; 2023 SSL-COM. All Rights Reserved. Website - Copyright 2023</p>
+    <ul id="footerContainer">
+      <li class="footerLink">
+        <a href="accessibility.html">Accessibility</a>
+      </li>
+      <li class="footerLink">
+        <a href="legal.html">Legal / Security</a>
+      </li>
+      <li class="footerLink">
+        <a href="design.html">Design</a>
+      </li>
+      <li class="footerLink">
+        <a href="testing.html">Testing</a>
+      </li>
+    </ul>
+  </footer>
+</body>
+</html>
